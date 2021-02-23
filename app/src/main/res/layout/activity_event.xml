@@ -30,12 +30,12 @@
         app:srcCompat="@drawable/illustration" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="346dp"
-        android:layout_height="405dp"
+        android:layout_width="356dp"
+        android:layout_height="661dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView6" >
+        app:layout_constraintTop_toTopOf="@+id/imageView6">
 
         <TextView
             android:id="@+id/textView4"
@@ -47,5 +47,22 @@
             android:text="Islamic Events"
             android:textColor="#000000"
             android:textSize="24sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/event_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
